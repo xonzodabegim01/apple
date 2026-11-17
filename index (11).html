@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fff5fa">
+  <title>Apple Store — DeepPink</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style (6).css">
+  <script src="index.js" defer></script>
+</head>
+<body id="top">
+  <div class="announcement">Yangi texnologiyalar olamiga xush kelibsiz <span>✦</span> DeepPink Apple Store</div>
+
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a class="brand" href="#top" aria-label="Bosh sahifa"> <span>DeepPink</span></a>
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Menyuni ochish" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-links" id="navLinks" aria-label="Asosiy menyu">
+        <a href="#store">Store</a>
+        <a href="#mac">Mac</a>
+        <a href="#ipad">iPad</a>
+        <a href="#iphone">iPhone</a>
+        <a href="#watch">Watch</a>
+        <a href="#airpods">AirPods</a>
+        <a href="#vision">Vision</a>
+        <a href="#tvhome">TV & Home</a>
+        <a href="#services">Xizmatlar</a>
+        <a href="#accessories">Aksessuarlar</a>
+        <a href="#support">Support</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="icon-button" id="searchToggle" aria-label="Qidirish">⌕</button>
+        <button class="icon-button bag-button" id="bagToggle" aria-label="Savat">♧<span id="bagCount">0</span></button>
+      </div>
+    </div>
+
+    <div class="mega-menu" id="megaMenu" aria-hidden="true">
+      <div class="mega-inner">
+        <p class="eyebrow">KATEGORIYA</p>
+        <h3 id="megaTitle">Mahsulotlarni tanlang</h3>
+        <div class="mega-links" id="megaLinks"></div>
+      </div>
+    </div>
+
+    <div class="search-panel" id="searchPanel" aria-hidden="true">
+      <div class="panel-inner">
+        <label for="siteSearch">Nimani qidiryapsiz?</label>
+        <input id="siteSearch" type="search" placeholder="iPhone, MacBook, AirPods..." autocomplete="off">
+        <p id="searchHint">Mahsulot nomini yozing va Enter bosing.</p>
+      </div>
+    </div>
+
+    <div class="bag-panel" id="bagPanel" aria-hidden="true">
+      <h3>Savatingiz</h3>
+      <p id="bagMessage">Savatingiz hozircha bo‘sh.</p>
+      <ul id="bagItems"></ul>
+      <button class="text-button" id="clearBag">Savatni tozalash</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-label="Tavsiya etilgan mahsulotlar">
+      <div class="hero-slides">
+        <article class="hero-slide active">
+          <div class="hero-copy">
+            <p class="eyebrow">YANGI AVLOD</p><h1>iPhone 17 Pro</h1>
+            <p>Kuchli kamera. Yangi imkoniyatlar. Har kuni ilhom.</p>
+            <a class="pill-button" href="#iphone">Batafsil ko‘rish</a>
+          </div>
+          <img src="https://www.apple.com/ecc-shared/iphone-17-pro/images/overview/highlights/highlights_design_endframe__flnga0hibmeu_large.jpg" alt="Smartfon">
+        </article>
+        <article class="hero-slide">
+          <div class="hero-copy">
+            <p class="eyebrow">YENGIL. KUCHLI. QULAY.</p><h1>MacBook Air</h1>
+            <p>Ish, ijod va g‘oyalar uchun mukammal hamroh.</p>
+            <a class="pill-button" href="#mac">Mac bilan tanishing</a>
+          </div>
+          <img src="https://www.apple.com/v/macbook-air/z/images/overview/design/color/design_top_skyblue__eepkvlvjzcia_large.jpg" alt="Noutbuk">
+        </article>
+        <article class="hero-slide">
+          <div class="hero-copy">
+            <p class="eyebrow">SOG‘LOM HAYOT RITMI</p><h1>Apple Watch</h1>
+            <p>Faolligingizni kuzating va har lahzadan zavqlaning.</p>
+            <a class="pill-button" href="#watch">Watch modellarini ko‘rish</a>
+          </div>
+          <img src="https://images.unsplash.com/photo-1544117519-31a4b719223d?auto=format&fit=crop&w=1200&q=85" alt="Aqlli soat">
+        </article>
+      </div>
+      <div class="hero-controls">
+        <button id="prevSlide" aria-label="Oldingi slayd">←</button>
+        <div class="slider-dots" id="sliderDots"></div>
+        <button id="nextSlide" aria-label="Keyingi slayd">→</button>
+        <button id="pauseSlider" aria-label="Slaydni to‘xtatish">Ⅱ</button>
+      </div>
+    </section>
+
+    <section class="intro section" id="store">
+      <p class="eyebrow">DEEPPINK STORE</p>
+      <h2>Apple olamiga xush kelibsiz.</h2>
+      <p class="section-lead">Sevimli qurilmalaringizni toping va yangi texnologiyalar bilan tanishing.</p>
+      <div class="category-strip">
+        <a href="#iphone"><span>📱</span>iPhone</a><a href="#mac"><span>💻</span>Mac</a>
+        <a href="#ipad"><span>▣</span>iPad</a><a href="#watch"><span>⌚</span>Watch</a>
+        <a href="#airpods"><span>🎧</span>AirPods</a><a href="#vision"><span>🥽</span>Vision</a>
+        <a href="#accessories"><span>✦</span>Aksessuarlar</a>
+      </div>
+    </section>
+
+    <section class="product-section section" id="iphone">
+      <div class="section-heading"><div><p class="eyebrow">IPHONE</p><h2>iPhone tanlovi.</h2></div><a class="see-all" href="#all-products">Barchasini ko‘rish →</a></div>
+      <div class="product-grid">
+        <article class="product-card" data-name="iPhone 17 Pro"><div class="product-image pink-bg"><img src="https://www.apple.com/ecc-shared/iphone-17-pro/images/overview/highlights/highlights_design_endframe__flnga0hibmeu_large.jpg" alt="iPhone uslubidagi telefon"></div><div class="product-info"><span class="tag">Yangi</span><h3>iPhone 17 Pro</h3><p>Pro darajadagi quvvat va kamera.</p><strong>Dan boshlanadi: $999</strong><button class="add-button" data-product="iPhone 17 Pro">Savatga qo‘shish</button></div></article>
+        <article class="product-card" data-name="iPhone 17"><div class="product-image lavender-bg"><img src="https://www.apple.com/ecc-shared/iphone-17/images/overview/welcome/hero_startframe__fslo8k8lane6_xlarge.jpg" alt="Smartfon"></div><div class="product-info"><h3>iPhone 17</h3><p>Kundalik hayot uchun ajoyib imkoniyatlar.</p><strong>Dan boshlanadi: $799</strong><button class="add-button" data-product="iPhone 17">Savatga qo‘shish</button></div></article>
+        <article class="product-card" data-name="iPhone Air"><div class="product-image blue-bg"><img src="https://www.apple.com/v/iphone-air/e/images/overview/contrast/iphone_air__bpnodv7do9ua_large.jpg" alt="Yupqa smartfon"></div><div class="product-info"><h3>iPhone Air</h3><p>Yengil dizayn, katta taassurot.</p><strong>Dan boshlanadi: $899</strong><button class="add-button" data-product="iPhone Air">Savatga qo‘shish</button></div></article>
+        <article class="product-card" data-name="iPhone 16"><div class="product-image dark-bg"><img src="https://images.unsplash.com/photo-1598327105666-5b89351aff97?auto=format&fit=crop&w=800&q=85" alt="Smartfon ekrani"></div><div class="product-info"><h3>iPhone 16</h3><p>Ishonchli kundalik hamroh.</p><strong>Dan boshlanadi: $699</strong><button class="add-button" data-product="iPhone 16">Savatga qo‘shish</button></div></article>
+      </div>
+    </section>
+
+    <section class="product-section section tinted" id="mac">
+      <div class="section-heading"><div><p class="eyebrow">MAC</p><h2>Mac bilan ko‘proq imkoniyat.</h2></div></div>
+      <div class="product-grid">
+        <article class="product-card" data-name="MacBook Air"><div class="product-image blue-bg"><img src="https://www.apple.com/v/macbook-air/z/images/overview/design/color/design_top_skyblue__eepkvlvjzcia_large.jpg" alt="MacBook uslubidagi noutbuk"></div><div class="product-info"><span class="tag">Mashhur</span><h3>MacBook Air</h3><p>Yupqa, yengil va kundalik ishlar uchun.</p><strong>Dan boshlanadi: $999</strong><button class="add-button" data-product="MacBook Air">Savatga qo‘shish</button></div></article>
+        <article class="product-card" data-name="MacBook Pro"><div class="product-image dark-bg"><img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=85" alt="Professional noutbuk"></div><div class="product-info"><h3>MacBook Pro</h3><p>Professional ijod va murakkab vazifalar uchun.</p><strong>Dan boshlanadi: $1,599</strong><button class="add-button" data-product="MacBook Pro">Savatga qo‘shish</button></div></article>
+        <article class="product-card" data-name="iMac"><div class="product-image pink-bg"><img src="https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?auto=format&fit=crop&w=800&q=85" alt="Stol kompyuteri"></div><div class="product-info"><h3>iMac</h3><p>Chiroyli va qulay all-in-one kompyuter.</p><strong>Dan boshlanadi: $1,299</strong><button class="add-button" data-product="iMac">Savatga qo‘shish</button></div></article>
+        <article class="product-card" data-name="Mac mini"><div class="product-image lavender-bg"><img src="https://images.unsplash.com/photo-1587202372775-e229f172b9d7?auto=format&fit=crop&w=800&q=85" alt="Kompakt kompyuter"></div><div class="product-info"><h3>Mac mini</h3><p>Kichik korpusda katta imkoniyat.</p><strong>Dan boshlanadi: $599</strong><button class="add-button" data-product="Mac mini">Savatga qo‘shish</button></div></article>
+      </div>
+    </section>
+
+    <section class="product-section section" id="ipad">
+      <div class="section-heading"><div><p class="eyebrow">IPAD</p><h2>Ijod uchun joy keng.</h2></div></div>
+      <div class="product-grid">
+        <article class="product-card" data-name="iPad Pro"><div class="product-image dark-bg"><img src="https://www.apple.com/v/ipad-pro/aw/images/overview/design/modal/hero__dvebaktighme_large.jpg" alt="Apple iPad Pro"></div><div class="product-info"><h3>iPad Pro</h3><p>Eng talabchan ijodkorlar uchun.</p><strong>Dan boshlanadi: $999</strong><button class="add-button" data-product="iPad Pro">Savatga qo‘shish</button></div></article>
+        <article class="product-card" data-name="iPad Air"><div class="product-image blue-bg"><img src="https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MP_108018827?align=center&ex=697&ey=523&format=webp&quality=60&resizesource=&sp=yes&strip=yes&trim=yes&unsharp=0.5x0.5&x=697&y=523" alt="Apple iPad Air ko‘k rangda"></div><div class="product-info"><h3>iPad Air</h3><p>Quvvat va ko‘chma qulaylik uyg‘unligi.</p><strong>Dan boshlanadi: $599</strong><button class="add-button" data-product="iPad Air">Savatga qo‘shish</button></div></article>
+        <article class="product-card" data-name="iPad"><div class="product-image lavender-bg"><img src="https://istyle.ae/cdn/shop/files/IMG-16745587_m_jpg_1.jpg?v=1749028036" alt="Apple iPad A16 ko‘k rangda"></div><div class="product-info"><h3>iPad</h3><p>O‘qish, ko‘rish va o‘rganish uchun.</p><strong>Dan boshlanadi: $349</strong><button class="add-button" data-product="iPad">Savatga qo‘shish</button></div></article>
+        <article class="product-card" data-name="iPad mini"><div class="product-image pink-bg"><img src="https://img-resizer.cyberport.de/cp/images/1368x1368/PI_410420361" alt="Apple iPad mini Space Gray"></div><div class="product-info"><h3>iPad mini</h3><p>Ixcham, lekin imkoniyatlarga boy.</p><strong>Dan boshlanadi: $499</strong><button class="add-button" data-product="iPad mini">Savatga qo‘shish</button></div></article>
+      </div>
+    </section>
+
+    <section class="product-section section tinted" id="watch">
+      <div class="section-heading"><div><p class="eyebrow">WATCH</p><h2>Har lahzada siz bilan.</h2></div></div>
+      <div class="product-grid">
+        <article class="product-card" data-name="Apple Watch Series 11"><div class="product-image pink-bg"><img src="https://images.unsplash.com/photo-1544117519-31a4b719223d?auto=format&fit=crop&w=800&q=85" alt="Aqlli soat"></div><div class="product-info"><h3>Apple Watch Series 11</h3><p>Faollik va kundalik sog‘lom odatlar.</p><strong>Dan boshlanadi: $399</strong><button class="add-button" data-product="Apple Watch Series 11">Savatga qo‘shish</button></div></article>
+        <article class="product-card" data-name="Apple Watch Ultra 3"><div class="product-image dark-bg"><img src="https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?auto=format&fit=crop&w=800&q=85" alt="Sport aqlli soati"></div><div class="product-info"><h3>Apple Watch Ultra 3</h3><p>Sarguzasht va sport uchun bardoshli dizayn.</p><strong>Dan boshlanadi: $799</strong><button class="add-button" data-product="Apple Watch Ultra 3">Savatga qo‘shish</button></div></article>
+        <article class="product-card" data-name="Apple Watch SE 3"><div class="product-image lavender-bg"><img src="https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?auto=format&fit=crop&w=800&q=85" alt="Bilakdagi aqlli soat"></div><div class="product-info"><h3>Apple Watch SE 3</h3><p>Kerakli funksiyalar, qulay tanlov.</p><strong>Dan boshlanadi: $249</strong><button class="add-button" data-product="Apple Watch SE 3">Savatga qo‘shish</button></div></article>
+      </div>
+    </section>
+
+    <section class="product-section section" id="airpods">
+      <div class="section-heading"><div><p class="eyebrow">AIRPODS</p><h2>Ovozingiz. Sizning olamingiz.</h2></div></div>
+      <div class="product-grid">
+        <article class="product-card" data-name="AirPods Pro 3"><div class="product-image lavender-bg"><img src="https://images.unsplash.com/photo-1603351154351-5e2d0600bb77?auto=format&fit=crop&w=800&q=85" alt="Simsiz quloqchin"></div><div class="product-info"><h3>AirPods Pro 3</h3><p>Shovqinni boshqarish va tiniq ovoz.</p><strong>Dan boshlanadi: $249</strong><button class="add-button" data-product="AirPods Pro 3">Savatga qo‘shish</button></div></article>
+        <article class="product-card" data-name="AirPods 4"><div class="product-image pink-bg"><img src="https://images.unsplash.com/photo-1606220945770-b5b6c2c55bf1?auto=format&fit=crop&w=800&q=85" alt="Oq simsiz quloqchinlar"></div><div class="product-info"><h3>AirPods 4</h3><p>Qulay va kundalik tinglash uchun.</p><strong>Dan boshlanadi: $129</strong><button class="add-button" data-product="AirPods 4">Savatga qo‘shish</button></div></article>
+        <article class="product-card" data-name="AirPods Max"><div class="product-image blue-bg"><img src="https://images.unsplash.com/photo-1546435770-a3e426bf472b?auto=format&fit=crop&w=800&q=85" alt="Quloqchin"></div><div class="product-info"><h3>AirPods Max</h3><p>Yuqori sifatli over-ear audio tajribasi.</p><strong>Dan boshlanadi: $549</strong><button class="add-button" data-product="AirPods Max">Savatga qo‘shish</button></div></article>
+      </div>
+    </section>
+
+    <section class="feature-section section tinted" id="vision">
+      <div class="feature-copy"><p class="eyebrow">APPLE VISION</p><h2>Fazoviy tajribaga qadam qo‘ying.</h2><p>Raqamli kontent va haqiqiy makon uyg‘unlashgan yangi tajriba bilan tanishing.</p><a class="pill-button" href="#all-products">Ko‘proq bilish</a></div>
+      <img src="https://images.unsplash.com/photo-1622979135225-d2ba269cf1ac?auto=format&fit=crop&w=1100&q=85" alt="Virtual reallik ko‘zoynagi">
+    </section>
+
+    <section class="product-section section" id="tvhome">
+      <div class="section-heading"><div><p class="eyebrow">TV & HOME</p><h2>Uyda ham aqlli tajriba.</h2></div></div>
+      <div class="product-grid">
+        <article class="product-card" data-name="Apple TV 4K"><div class="product-image dark-bg"><img src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?auto=format&fit=crop&w=800&q=85" alt="Televizor ekrani"></div><div class="product-info"><h3>Apple TV 4K</h3><p>Sevimli ko‘rsatuvlaringiz katta ekranda.</p><strong>Dan boshlanadi: $129</strong><button class="add-button" data-product="Apple TV 4K">Savatga qo‘shish</button></div></article>
+        <article class="product-card" data-name="HomePod"><div class="product-image pink-bg"><img src="https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?auto=format&fit=crop&w=800&q=85" alt="Aqlli kolonka"></div><div class="product-info"><h3>HomePod</h3><p>Uy uchun aqlli ovoz va musiqa.</p><strong>Dan boshlanadi: $299</strong><button class="add-button" data-product="HomePod">Savatga qo‘shish</button></div></article>
+        <article class="product-card" data-name="HomePod mini"><div class="product-image lavender-bg"><img src="https://www.staples.ca/cdn/shop/files/5b7446d56f7bb6972a251cc5ccfcea1f97c7450d_square2994512_1_1000x.jpg?v=1770358572" alt="Apple HomePod mini oq rangda"></div><div class="product-info"><h3>HomePod mini</h3><p>Ixcham korpusda yoqimli ovoz.</p><strong>Dan boshlanadi: $99</strong><button class="add-button" data-product="HomePod mini">Savatga qo‘shish</button></div></article>
+      </div>
+    </section>
+
+    <section class="product-section section tinted" id="services">
+      <div class="section-heading"><div><p class="eyebrow">APPLE SERVICES</p><h2>Ko‘ngilochar olam.</h2></div></div>
+      <div class="service-grid">
+        <article class="service-card"><div class="service-icon">♫</div><h3>Apple Music</h3><p>Sevimli musiqalaringiz va yangi kashfiyotlar.</p></article>
+        <article class="service-card"><div class="service-icon">▶</div><h3>Apple TV+</h3><p>Original filmlar va seriallar olami.</p></article>
+        <article class="service-card"><div class="service-icon">◎</div><h3>Apple Arcade</h3><p>O‘yin-kulgi va yangi sarguzashtlar.</p></article>
+        <article class="service-card"><div class="service-icon">☁</div><h3>iCloud+</h3><p>Fayllar va suratlaringiz uchun bulutli joy.</p></article>
+      </div>
+    </section>
+
+    <section class="product-section section" id="accessories">
+      <div class="section-heading"><div><p class="eyebrow">AKSESSUARLAR</p><h2>Mayda detallar, katta qulaylik.</h2></div></div>
+      <div class="product-grid">
+        <article class="product-card" data-name="Magic Keyboard"><div class="product-image blue-bg"><img src="https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&fit=crop&w=800&q=85" alt="Klaviatura"></div><div class="product-info"><h3>Magic Keyboard</h3><p>Qulay va aniq yozish tajribasi.</p><strong>Dan boshlanadi: $99</strong><button class="add-button" data-product="Magic Keyboard">Savatga qo‘shish</button></div></article>
+        <article class="product-card" data-name="Magic Mouse"><div class="product-image lavender-bg"><img src="https://images.unsplash.com/photo-1527814050087-3793815479db?auto=format&fit=crop&w=800&q=85" alt="Sichqoncha"></div><div class="product-info"><h3>Magic Mouse</h3><p>Sodda dizayn va qulay boshqaruv.</p><strong>Dan boshlanadi: $79</strong><button class="add-button" data-product="Magic Mouse">Savatga qo‘shish</button></div></article>
+        <article class="product-card" data-name="Apple Pencil"><div class="product-image pink-bg"><img src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/MX2D3?.v=WDY3dTduUFdPR3ZjMDl4NGwxNzAyV2orYzFkTG5HaE9wejd5WUxYZjRML2tyK21QQVlqVGgrcGQ5Uy9BWWRGOUU5TjEzNDVxWGZyenF5K251RnVTZXc&fmt=jpeg&hei=2000&qlt=90&wid=2000" alt="Apple Pencil Pro oq rangda"></div><div class="product-info"><h3>Apple Pencil</h3><p>Chizish, yozish va g‘oyalarni ifodalash.</p><strong>Dan boshlanadi: $79</strong><button class="add-button" data-product="Apple Pencil">Savatga qo‘shish</button></div></article>
+        <article class="product-card" data-name="MagSafe Charger"><div class="product-image dark-bg"><img src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/MHXH3_AV1?.v=M1VzY2ljeFlzTWQ3Nk00MURQVnpSMVZya2lKWlJmUEwrYndWOTJiVWJWQUYwVmtIbGRkS25RMVpBRlo0bk5DUUJrc0hiZWVveXB2VlZCZXFveE1jSUE&fmt=jpeg&hei=1144&qlt=90&wid=1144" alt="Apple MagSafe Charger oq rangda"></div><div class="product-info"><h3>MagSafe Charger</h3><p>Magnitli simsiz quvvatlash qulayligi.</p><strong>Dan boshlanadi: $39</strong><button class="add-button" data-product="MagSafe Charger">Savatga qo‘shish</button></div></article>
+      </div>
+    </section>
+
+    <section class="all-products section" id="all-products">
+      <p class="eyebrow">BARCHA KATEGORIYALAR</p><h2>Apple mahsulotlari bir joyda.</h2>
+      <p>iPhone, Mac, iPad, Apple Watch, AirPods, Vision Pro, TV & Home, xizmatlar va aksessuarlar.</p>
+      <a href="#top" class="pill-button">Yuqoriga qaytish</a>
+    </section>
+  </main>
+
+  <footer id="support">
+    <div class="footer-inner"><div class="footer-brand"> DeepPink Store</div><p>Ushbu sayt o‘quv/demo loyiha sifatida yaratilgan. Apple Inc. bilan rasmiy aloqasi yo‘q. Mahsulot nomlari va tasvirlari namuna sifatida ishlatilgan.</p><div class="footer-links"><a href="#store">Store</a><a href="#accessories">Aksessuarlar</a><a href="#support">Yordam</a><a href="#top">Yuqoriga ↑</a></div><small>© 2026 DeepPink Store. Demo loyiha.</small></div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
